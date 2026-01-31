@@ -1,7 +1,7 @@
 # roles.tf
 
-# Enable / Disable AD groups creation
-# variable "enable_ad_groups" { default = true }
+ #Enable / Disable AD groups creation
+ variable "enable_ad_groups" { default = true }
 
 resource "azuread_group" "network_admin" {
   count            = var.enable_ad_groups ? 1 : 0
