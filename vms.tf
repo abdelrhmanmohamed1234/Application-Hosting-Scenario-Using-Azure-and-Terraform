@@ -5,8 +5,8 @@ resource "azurerm_linux_virtual_machine" "shop_vm1" {
   location              = var.location
   size                  = "Standard_D2s_v3"
 
-  admin_username = "adminuser"
-  admin_password = "Password123!"
+  admin_username = ""
+  admin_password = ""
   disable_password_authentication = false
 
   network_interface_ids = [
@@ -33,8 +33,8 @@ resource "azurerm_linux_virtual_machine" "shop_vm2" {
   location              = var.location
   size                  = "Standard_D2s_v3"
 
-  admin_username = "adminuser"
-  admin_password = "Password123!"
+  admin_username = ""
+  admin_password = ""
   disable_password_authentication = false
 
   network_interface_ids = [
